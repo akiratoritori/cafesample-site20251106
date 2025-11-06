@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>喫茶 すなばこ</title>
+  <meta name="description" content="レトロで落ち着いた喫茶店。初めての方にも雰囲気が伝わるように写真や情報をまとめました。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- ===== Topbar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="mini-brand">喫茶 すなばこ</div>
+      <div class="mini-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#access">Info</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="トップへ">
+        <span class="brand-logo">☕</span>
+        <span class="brand-text">喫茶 すなばこ</span>
+      </a>
+      <nav class="nav">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu">メニュー</button>
+        <ul id="navMenu" class="nav-list">
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#first">ご来店の前に</a></li>
+          <li><a href="#gallery">店内の雰囲気</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#snap">スナップ</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="top" class="hero">
+    <div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1498551172505-8ee7ad69f235?q=80&w=1600&auto=format&fit=crop');"></div>
+    <div class="container hero-inner">
+      <div class="hero-breadcrumb">喫茶 すなばこ</div>
+      <h1 class="hero-title">静かな時間が流れる、街角の喫茶店</h1>
+      <p class="hero-lead">初めての方にも雰囲気が伝わるよう、写真と情報をまとめました。</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#menu">メニュー</a>
+        <a class="btn ghost" href="#access">アクセス</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Notices ===== -->
+  <section id="news" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">🗓</span> お知らせ</h2>
+      <ul class="cards three notice-list">
+        <li class="card notice">
+          <div class="notice-head">
+            <span class="round-badge new">N</span>
+            <time datetime="2025-11-05">2025/11/05</time>
+          </div>
+          <h3 class="notice-title">冬のブレンドに切り替えました</h3>
+          <p class="muted small">深煎りベースでミルクにも合う味わいです。</p>
+        </li>
+        <li class="card notice">
+          <div class="notice-head">
+            <span class="round-badge info">i</span>
+            <time datetime="2025-11-01">2025/11/01</time>
+          </div>
+          <h3 class="notice-title">営業時間のお知らせ</h3>
+          <p class="muted small">平日 9:00–19:00 / 土日祝 8:00–18:00（火曜定休）。</p>
+        </li>
+        <li class="card notice">
+          <div class="notice-head">
+            <span class="round-badge info">i</span>
+            <time datetime="2025-10-21">2025/10/21</time>
+          </div>
+          <h3 class="notice-title">店内Wi-Fi・電源あります</h3>
+          <p class="muted small">静かなBGMで作業にも向いています。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== First time / two small cards ===== -->
+  <section id="first" class="section soft">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">🌟</span> ご来店の前に</h2>
+      <div class="cards two">
+        <article class="card mini">
+          <div class="mini-head">
+            <div class="pin">案内</div>
+            <div class="mini-title">初めての方へ</div>
+          </div>
+          <p class="small">席の間隔や音量、照明の明るさなどを写真とともにまとめました。</p>
+        </article>
+        <article class="card mini">
+          <div class="mini-head">
+            <div class="pin">お願い</div>
+            <div class="mini-title">静かな空間づくり</div>
+          </div>
+          <p class="small">通話は店外で、PC作業は共同テーブルをご利用ください。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery pair with captions ===== -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">📷</span> 店内の雰囲気</h2>
+      <div class="gallery-pair">
+        <figure class="glass">
+          <img src="https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?q=80&w=1200&auto=format&fit=crop" alt="カウンター">
+          <figcaption>カウンター席</figcaption>
+        </figure>
+        <figure class="glass">
+          <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=1200&auto=format&fit=crop" alt="照明">
+          <figcaption>明るすぎない照明</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT with photo right ===== -->
+  <section id="about" class="section soft">
+    <div class="container about">
+      <div class="about-text">
+        <h2 class="section-title"><span class="title-icon">🏠</span> ABOUT</h2>
+        <p>1975年創業の小さな喫茶店です。時間がゆっくり流れるような落ち着いた空間で、ハンドドリップの珈琲と懐かしい軽食をご用意しています。</p>
+        <ul class="tick">
+          <li>無料Wi‑Fi / 電源あり</li>
+          <li>全席禁煙（入口に喫煙所）</li>
+          <li>テラス席はペット同伴可</li>
+        </ul>
+        <a class="btn" href="#access">店舗情報</a>
+      </div>
+      <figure class="about-figure glass">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="店内写真">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Two wide photos and tables ===== -->
+  <section id="snap" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">📝</span> 店の様子と価格</h2>
+      <div class="wide-photos">
+        <img src="https://images.unsplash.com/photo-1515165562835-c4c4e043d82d?q=80&w=1200&auto=format&fit=crop" alt="テラスと犬">
+        <img src="https://images.unsplash.com/photo-1517702163713-cbf7a3e8068f?q=80&w=1200&auto=format&fit=crop" alt="店内バー">
+      </div>
+      <div class="tables">
+        <div class="table glass">
+          <div class="table-title">ドリンク（例）</div>
+          <ul class="kv">
+            <li><span>ブレンド</span><b>¥550</b></li>
+            <li><span>カフェオレ</span><b>¥600</b></li>
+            <li><span>アイス珈琲</span><b>¥600</b></li>
+            <li><span>紅茶（ポット）</span><b>¥650</b></li>
+          </ul>
+        </div>
+        <div class="table glass">
+          <div class="table-title">フード（例）</div>
+          <ul class="kv">
+            <li><span>タマゴサンド</span><b>¥720</b></li>
+            <li><span>ナポリタン</span><b>¥880</b></li>
+            <li><span>固めプリン</span><b>¥480</b></li>
+            <li><span>チーズケーキ</span><b>¥520</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Small gallery strip ===== -->
+  <section class="section soft">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">🖼</span> ギャラリー</h2>
+      <div class="thumbs">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=1200&auto=format&fit=crop" alt="本">
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1200&auto=format&fit=crop" alt="カウンター">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d2fe3f0?q=80&w=1200&auto=format&fit=crop" alt="照明">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact / reserve cards ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">☎</span> ご予約・お問い合わせ</h2>
+      <div class="cards three">
+        <article class="card mini">
+          <div class="mini-head">
+            <div class="pin">TEL</div>
+            <div class="mini-title">お電話</div>
+          </div>
+          <p class="small">078-000-0000（9:00–18:00）</p>
+        </article>
+        <article class="card mini">
+          <div class="mini-head">
+            <div class="pin">MAIL</div>
+            <div class="mini-title">メール</div>
+          </div>
+          <p class="small">hello@example.com</p>
+        </article>
+        <article class="card mini">
+          <div class="mini-head">
+            <div class="pin">SNS</div>
+            <div class="mini-title">Instagram</div>
+          </div>
+          <p class="small">@sunabaco_coffee</p>
+        </article>
+      </div>
+
+      <div class="contact-box glass">
+        <h3 class="contact-title">お問い合わせフォーム（ダミー）</h3>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('送信テスト：実装は未接続です。')">
+          <input type="text" placeholder="お名前" required>
+          <input type="email" placeholder="メールアドレス" required>
+          <textarea rows="4" placeholder="ご用件" required></textarea>
+          <button class="btn primary" type="submit">送信</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Access ===== -->
+  <section id="access" class="section soft">
+    <div class="container">
+      <h2 class="section-title"><span class="title-icon">📍</span> アクセス</h2>
+      <div class="cards two">
+        <article class="card mini">
+          <div class="mini-head"><div class="pin">INFO</div><div class="mini-title">店舗情報</div></div>
+          <ul class="kv small">
+            <li><span>住所</span><b>神戸市中央区サンプル1-2-3</b></li>
+            <li><span>営業時間</span><b>平日 9:00–19:00 / 土日祝 8:00–18:00</b></li>
+            <li><span>定休日</span><b>火曜</b></li>
+          </ul>
+        </article>
+        <article class="card mini">
+          <div class="mini-head"><div class="pin">MAP</div><div class="mini-title">地図</div></div>
+          <div class="map">Map Placeholder</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">☕</span>
+        <div>
+          <div class="fb-name">喫茶 すなばこ</div>
+          <div class="fb-sub">© 2025 SUNABACO COFFEE</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#">利用規約</a>
+        <a href="#">プライバシー</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
